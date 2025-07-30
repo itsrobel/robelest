@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --rose-pine-base: #faf4ed;
+  --rose-pine-text: #575279;
+  --rose-pine-muted: #9893a5;
+  --rose-pine-rose: #d7827e;
+  --rose-pine-gold: #ea9d34;
+  --rose-pine-surface: #f2e9e1;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--rose-pine-base);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--rose-pine-muted);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--rose-pine-rose);
+}
+
+/* Selection */
+::selection {
+  background: var(--rose-pine-rose);
+  color: var(--rose-pine-base);
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--rose-pine-rose);
+  outline-offset: 2px;
+}
+
+/* Smooth transitions */
+* {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
