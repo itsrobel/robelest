@@ -63,7 +63,7 @@ export default function HomePage() {
                       <span>01</span>
                       <div className="w-6 h-px bg-[#ea9d34]"></div>
                       <span>MISSION</span>
-                      <div className="w-3 h-3 bg-[#d7827e] rounded-full"></div>
+                      <Crown className="w-3 h-3 lg:w-4 lg:h-4 text-[#ea9d34]" />
                     </div>
                     <p className="text-sm lg:text-base text-[#575279] leading-relaxed">
                       Every API endpoint serves a greater purpose—connecting people with housing, healthcare, food
@@ -77,7 +77,7 @@ export default function HomePage() {
                   <div className="flex items-center gap-4 lg:gap-6 text-[#9893a5]">
                   <div className="flex items-center gap-3 text-[#9893a5]">
                     <MapPin className="w-4 h-4" />
-                    <span className="text-sm">Manhattan</span>
+                    <span className="text-sm">Manhattan, NYC</span>
                   </div>
                   </div>
 
@@ -99,40 +99,6 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                {/* Values Detail */}
-                <div className="space-y-4 lg:space-y-6">
-
-
-                    <div className="flex items-center gap-3 text-[#ea9d34] font-mono text-xs">
-                      <span>02</span>
-                      <div className="w-6 h-px bg-[#ea9d34]"></div>
-                      <span>VALUES</span>
-                      <Crown className="w-3 h-3 lg:w-4 lg:h-4 text-[#ea9d34]" />
-                    </div>
-
-                  <div className="space-y-3 lg:space-y-4">
-                    <div className="border-l-2 border-[#d7827e] pl-3 lg:pl-4">
-                      <h3 className="text-xs lg:text-sm font-medium mb-1 text-[#d7827e]">Heritage as Strength</h3>
-                      <p className="text-xs lg:text-sm text-[#9893a5] leading-relaxed">
-                        Ethiopian culture provides unique perspectives on problem-solving
-                      </p>
-                    </div>
-
-                    <div className="border-l-2 border-[#d7827e] pl-3 lg:pl-4">
-                      <h3 className="text-xs lg:text-sm font-medium mb-1 text-[#d7827e]">Technology with Purpose</h3>
-                      <p className="text-xs lg:text-sm text-[#9893a5] leading-relaxed">
-                        Every line of code serves human dignity and amplifies compassion
-                      </p>
-                    </div>
-
-                    <div className="border-l-2 border-[#d7827e] pl-3 lg:pl-4">
-                      <h3 className="text-xs lg:text-sm font-medium mb-1 text-[#d7827e]">Authentic Voice</h3>
-                      <p className="text-xs lg:text-sm text-[#9893a5] leading-relaxed">
-                        Professional but human, accomplished but approachable
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
