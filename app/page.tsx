@@ -77,22 +77,8 @@ export default function HomePage() {
                   <div className="flex items-center gap-4 lg:gap-6 text-[#9893a5]">
                   <div className="flex items-center gap-3 text-[#9893a5]">
                     <MapPin className="w-4 h-4" />
-                    <span className="text-sm">Manhattan, New York</span>
+                    <span className="text-sm">Manhattan</span>
                   </div>
-                    <Link
-                      href="https://linkedin.com"
-                      className="flex items-center gap-2 hover:text-[#d7827e] transition-colors"
-                    >
-                      <Linkedin className="w-4 h-4" />
-                      <span className="text-sm">LinkedIn</span>
-                    </Link>
-                    <Link
-                      href="https://github.com"
-                      className="flex items-center gap-2 hover:text-[#d7827e] transition-colors"
-                    >
-                      <Github className="w-4 h-4" />
-                      <span className="text-sm">GitHub</span>
-                    </Link>
                   </div>
 
                 </div>
