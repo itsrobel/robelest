@@ -34,7 +34,13 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-    generator: 'v0.dev'
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+  },
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
