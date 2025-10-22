@@ -65,7 +65,7 @@
 				<Crown class="w-4 h-4 sm:w-5 sm:h-5 text-[#ea9d34]" />
 				<span class="text-xs sm:text-sm font-medium">RE</span>
 			</div>
-			<div class="text-xs sm:text-sm text-[#9893a5] font-mono">{currentYear}</div>
+			<a href="/journal" class="text-xs sm:text-sm text-[#9893a5] font-mono hover:text-[#575279] transition-colors">Journal</a>
 		</nav>
 
 		<!-- Main Content -->
@@ -116,26 +116,6 @@
 							</div>
 						</div>
 					</div>
-
-					<!-- Right Side - Philosophy & Values Detail -->
-					<div class="lg:col-span-5 space-y-6 lg:space-y-8">
-						<!-- Philosophy Quote -->
-						<div class="space-y-4 lg:space-y-6">
-							<div class="text-right">
-								<div class="text-[#ea9d34] font-mono text-xs mb-3 lg:mb-4">PHILOSOPHY</div>
-								<blockquote
-									class="text-lg sm:text-xl lg:text-2xl font-light leading-tight text-[#575279] italic"
-								>
-									"Technology should serve humanity's <span class="text-[#d7827e]"
-										>highest aspirations</span
-									>"
-								</blockquote>
-							</div>
-							<div class="flex justify-end">
-								<div class="w-12 h-px bg-[#d7827e]"></div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</main>
@@ -151,7 +131,7 @@
 				<div class="flex items-center gap-2 text-[#9893a5] text-xs">
 					<Crown class="w-3 h-3 text-[#ea9d34]" />
 					<span>Heritage • Innovation • Impact</span>
-				</div>
+					</div>
 			</div>
 		</footer>
 	</div>

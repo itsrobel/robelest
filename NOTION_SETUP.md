@@ -31,7 +31,6 @@ This guide will walk you through setting up Notion as a CMS for your SvelteKit b
    | **Published** | Checkbox | Controls if post is visible on site |
    | **PublishDate** | Date | When the post was/will be published |
    | **Tags** | Multi-select | Categories/topics for the post |
-   | **Featured** | Checkbox | Mark posts to highlight on blog homepage |
    | **Description** | Text | Short summary for SEO and previews |
    | **OGImage** | URL | Social media preview image URL (optional) |
 
@@ -86,7 +85,6 @@ NOTION_DATABASE_ID=your_database_id_here
    - **Published**: Check the box
    - **PublishDate**: Select today's date
    - **Tags**: Add some tags (e.g., "Tutorial", "Getting Started")
-   - **Featured**: Check if you want it featured
    - **Description**: Write a short summary
 4. In the page body, write your blog post content using Notion's rich text editor
 5. Supported content types:

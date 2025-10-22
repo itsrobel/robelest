@@ -19,12 +19,10 @@ export const load: PageServerLoad = async ({ url, setHeaders }) => {
 
 	// Get query parameters for filtering
 	const tag = url.searchParams.get('tag');
-	const featured = url.searchParams.get('featured') === 'true';
 
 	// Fetch blog posts
 	const posts = await getBlogPosts({
 		publishedOnly: true,
-		featuredOnly: featured,
 		tag: tag || undefined
 	});
 
@@ -34,7 +32,6 @@ export const load: PageServerLoad = async ({ url, setHeaders }) => {
 	return {
 		posts,
 		tags,
-		selectedTag: tag,
-		showFeaturedOnly: featured
+		selectedTag: tag
 	};
 };
