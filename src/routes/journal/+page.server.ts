@@ -1,4 +1,4 @@
-import { getBlogPosts, getAllTags } from '$lib/notion-blog';
+import { getBlogPosts } from '$lib/notion-blog';
 import type { PageServerLoad } from './$types';
 
 // Enable prerendering with ISR
@@ -11,27 +11,18 @@ export const config = {
 	}
 };
 
-export const load: PageServerLoad = async ({ url, setHeaders }) => {
+export const load: PageServerLoad = async ({ setHeaders }) => {
 	// Set cache headers for ISR
 	setHeaders({
 		'cache-control': 'public, max-age=3600'
 	});
 
-	// Get query parameters for filtering
-	const tag = url.searchParams.get('tag');
-
-	// Fetch blog posts
+	// Fetch all published blog posts
 	const posts = await getBlogPosts({
-		publishedOnly: true,
-		tag: tag || undefined
+		publishedOnly: true
 	});
 
-	// Fetch all available tags
-	const tags = await getAllTags();
-
 	return {
-		posts,
-		tags,
-		selectedTag: tag
+		posts
 	};
 };
