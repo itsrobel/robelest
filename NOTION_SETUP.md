@@ -2,6 +2,12 @@
 
 This guide will walk you through setting up Notion as a CMS for your SvelteKit blog.
 
+> **⚠️ API Version Note**: This implementation uses **Notion SDK v2.x** (`@notionhq/client@^2.2.15`).
+>
+> **Why v2?** The Notion SDK v5+ introduced breaking changes that removed traditional `databases.query()` support. The migration path for existing databases in v5 is unclear, so we use the stable v2 API which is well-documented and widely used.
+>
+> **Future Migration**: When Notion's v5 API matures and provides clear migration documentation for traditional databases, this codebase will need to be updated. Monitor the [Notion SDK releases](https://github.com/makenotion/notion-sdk-js/releases) and [API changelog](https://developers.notion.com/page/changelog) for migration guides.
+
 ## Step 1: Create a Notion Integration
 
 1. Go to [Notion Integrations](https://www.notion.so/my-integrations)

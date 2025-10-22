@@ -1,3 +1,13 @@
+/**
+ * Notion CMS Integration
+ *
+ * API Version: v2.x (@notionhq/client@^2.2.15)
+ *
+ * Note: Using v2 because v5+ introduced breaking changes that removed
+ * traditional databases.query() support. The migration path for existing
+ * databases in v5 is unclear. Monitor SDK releases for future migration:
+ * https://github.com/makenotion/notion-sdk-js/releases
+ */
 import { Client } from '@notionhq/client';
 import { NOTION_API_KEY, NOTION_DATABASE_ID } from '$env/static/private';
 
