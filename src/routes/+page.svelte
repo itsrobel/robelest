@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { Crown, MapPin } from '@lucide/svelte';
-
-	const currentYear = new Date().getFullYear();
+	import { MapPin } from '@lucide/svelte';
+	import Header from '$lib/components/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 </script>
 
 <svelte:head>
@@ -29,110 +29,87 @@
 	<meta name="twitter:description" content="Building software that amplifies human compassion" />
 </svelte:head>
 
-<div class="h-screen bg-[#faf4ed] text-[#575279] overflow-hidden relative">
-	<!-- Lion of Judah Watermark - Bottom Right -->
-	<div class="absolute bottom-8 right-8 opacity-[0.04] pointer-events-none">
-		<img
-			src="/images/lion-of-judah.png"
-			alt="Lion of Judah"
-			width="280"
-			height="280"
-			loading="lazy"
-			class="object-contain"
-		/>
-	</div>
+<!-- Lion of Judah Watermark - Bottom Right -->
+<div class="absolute bottom-8 right-8 opacity-[0.04] pointer-events-none" aria-hidden="true">
+	<img
+		src="/images/lion-of-judah.png"
+		alt=""
+		width="280"
+		height="280"
+		loading="lazy"
+		class="object-contain"
+	/>
+</div>
 
-	<!-- Geometric Background Elements -->
-	<div class="absolute inset-0 pointer-events-none">
-		<!-- Geometric Lines -->
-		<div
-			class="absolute top-0 left-1/3 w-px h-full bg-gradient-to-b from-transparent via-[#ea9d34]/10 to-transparent"
-		></div>
-		<div
-			class="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#ea9d34]/10 to-transparent"
-		></div>
+<!-- Geometric Background Elements -->
+<div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+	<!-- Geometric Lines -->
+	<div
+		class="absolute top-0 left-1/3 w-px h-full bg-gradient-to-b from-transparent via-rose-pine-gold/10 to-transparent"
+	></div>
+	<div
+		class="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-rose-pine-gold/10 to-transparent"
+	></div>
 
-		<!-- Floating Elements -->
-		<div class="absolute top-20 right-1/4 w-2 h-2 bg-[#d7827e] rotate-45"></div>
-		<div class="absolute bottom-32 left-20 w-3 h-3 border border-[#ea9d34] rotate-12"></div>
-		<div class="absolute top-1/3 left-10 w-1 h-16 bg-[#ea9d34]/20"></div>
-	</div>
+	<!-- Floating Elements -->
+	<div class="absolute top-20 right-1/4 w-2 h-2 bg-rose-pine-rose rotate-45"></div>
+	<div class="absolute bottom-32 left-20 w-3 h-3 border border-rose-pine-gold rotate-12"></div>
+	<div class="absolute top-1/3 left-10 w-1 h-16 bg-rose-pine-gold/20"></div>
+</div>
 
-	<div class="relative z-10 h-full flex flex-col">
-		<!-- Navigation -->
-		<nav class="px-4 sm:px-6 lg:px-12 py-4 sm:py-8 flex justify-between items-center">
-			<div class="flex items-center gap-2">
-				<Crown class="w-4 h-4 sm:w-5 sm:h-5 text-[#ea9d34]" />
-				<span class="text-xs sm:text-sm font-medium">RE</span>
-			</div>
-			<a href="/journal" class="text-xs sm:text-sm text-[#9893a5] font-mono hover:text-[#575279] transition-colors">Journal</a>
-		</nav>
+<Header logoHref="" rightLink={{ text: 'Journal', href: '/journal' }} />
 
-		<!-- Main Content -->
-		<main class="flex-1 px-4 sm:px-6 lg:px-12 flex items-center">
-			<div class="max-w-7xl mx-auto w-full">
-				<div class="grid lg:grid-cols-12 gap-6 lg:gap-12 items-center">
-					<!-- Left Side - Main Content -->
-					<div class="lg:col-span-7 space-y-6 lg:space-y-8">
-						<!-- Header -->
-						<div class="space-y-4 lg:space-y-6">
-							<h1
-								class="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-light leading-[0.85] tracking-tight"
-							>
-								<span class="text-[#575279]">Robel Estifanos</span>
-							</h1>
+<!-- Main Content -->
+<main id="main-content" class="flex-1 px-4 sm:px-6 lg:px-12 py-8 lg:py-16">
+	<div class="max-w-7xl mx-auto w-full">
+		<div class="grid lg:grid-cols-12 gap-6 lg:gap-12 items-center">
+			<!-- Left Side - Main Content -->
+			<div class="lg:col-span-7 space-y-6 lg:space-y-8">
+				<!-- Introduction Section -->
+				<section aria-label="Introduction">
+					<h1
+						class="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-light leading-[0.85] tracking-tight mb-4 lg:mb-6"
+					>
+						<span class="text-rose-pine-text">Robel Estifanos</span>
+					</h1>
 
-							<p class="text-lg sm:text-xl lg:text-2xl leading-relaxed text-[#575279] max-w-lg">
-								Building software that <span class="italic text-[#d7827e]"
-									>amplifies human compassion</span
-								>
-								@ Trestle
+					<p class="text-lg sm:text-xl lg:text-2xl leading-relaxed text-rose-pine-text max-w-lg">
+						Building software that <span class="italic text-rose-pine-rose"
+							>amplifies human compassion</span
+						>
+						@ Trestle
+					</p>
+				</section>
+
+				<!-- Mission Section -->
+				<section aria-labelledby="mission-heading">
+					<div class="grid sm:grid-cols-2 gap-6 lg:gap-8 max-w-4xl">
+						<div class="space-y-3 lg:space-y-4">
+							<div class="flex items-center gap-3 text-rose-pine-gold font-mono text-xs">
+								<span aria-hidden="true">01</span>
+								<div class="w-6 h-px bg-rose-pine-gold" aria-hidden="true"></div>
+								<h2 id="mission-heading" class="text-xs">MISSION</h2>
+							</div>
+							<p class="text-sm lg:text-base text-rose-pine-text leading-relaxed">
+								Every API endpoint serves a greater purpose—connecting people with housing,
+								healthcare, food security, and dignity.
 							</p>
 						</div>
+					</div>
+				</section>
 
-						<!-- Mission & Values -->
-						<div class="grid sm:grid-cols-2 gap-6 lg:gap-8 max-w-4xl">
-							<div class="space-y-3 lg:space-y-4">
-								<div class="flex items-center gap-3 text-[#ea9d34] font-mono text-xs">
-									<span>01</span>
-									<div class="w-6 h-px bg-[#ea9d34]"></div>
-									<span>MISSION</span>
-									<Crown class="w-3 h-3 lg:w-4 lg:h-4 text-[#ea9d34]" />
-								</div>
-								<p class="text-sm lg:text-base text-[#575279] leading-relaxed">
-									Every API endpoint serves a greater purpose—connecting people with housing,
-									healthcare, food security, and dignity.
-								</p>
-							</div>
-						</div>
-
-						<!-- Contact & Social -->
-						<div class="space-y-4 lg:space-y-6">
-							<div class="flex items-center gap-4 lg:gap-6 text-[#9893a5]">
-								<div class="flex items-center gap-3 text-[#9893a5]">
-									<MapPin class="w-4 h-4" />
-									<span class="text-sm">Manhattan, NYC</span>
-								</div>
-							</div>
+				<!-- Contact Section -->
+				<section aria-label="Contact information">
+					<div class="flex items-center gap-4 lg:gap-6 text-rose-pine-muted">
+						<div class="flex items-center gap-3 text-rose-pine-muted">
+							<MapPin aria-hidden="true" class="w-4 h-4" />
+							<span class="text-sm">Manhattan, NYC</span>
 						</div>
 					</div>
-				</div>
+				</section>
 			</div>
-		</main>
-
-		<!-- Footer -->
-		<footer class="px-4 sm:px-6 lg:px-12 py-3 lg:py-6">
-			<div
-				class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 lg:gap-4"
-			>
-				<p class="text-[#9893a5] text-xs">
-					© {currentYear} Robel Estifanos. Building bridges through technology.
-				</p>
-				<div class="flex items-center gap-2 text-[#9893a5] text-xs">
-					<Crown class="w-3 h-3 text-[#ea9d34]" />
-					<span>Heritage • Innovation • Impact</span>
-					</div>
-			</div>
-		</footer>
+		</div>
 	</div>
-</div>
+</main>
+
+<Footer />
