@@ -90,7 +90,7 @@
 								<div class="w-6 h-px bg-rose-pine-gold" aria-hidden="true"></div>
 								<h2 id="mission-heading" class="text-xs">MISSION</h2>
 							</div>
-							<p class="text-sm lg:text-base text-rose-pine-text leading-relaxed">
+							<p class="text-base sm:text-lg text-rose-pine-text leading-relaxed">
 								Every API endpoint serves a greater purpose—connecting people with housing,
 								healthcare, food security, and dignity.
 							</p>

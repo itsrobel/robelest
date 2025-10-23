@@ -78,17 +78,13 @@
 									aria-label="Read {post.title}"
 									class="group block space-y-3 hover:opacity-70 transition-opacity"
 								>
-									<div class="flex items-center gap-4 text-rose-pine-muted font-mono text-sm">
-										<span class="font-medium">{post.title}</span>
-										<span aria-hidden="true">•</span>
+									<div class="flex items-center gap-2 sm:gap-4 text-rose-pine-muted font-mono text-xs sm:text-sm flex-wrap">
 										<time datetime={post.publishDate}>{formatDate(post.publishDate)}</time>
-										{#if post.tags.length > 0}
-											<span aria-hidden="true">•</span>
-											<span>{post.tags.join(', ')}</span>
-										{/if}
+										<span aria-hidden="true">•</span>
+										<span class="font-medium">{post.title}</span>
 									</div>
 									{#if post.description}
-										<p class="text-base text-rose-pine-muted max-w-2xl">
+										<p class="text-base text-rose-pine-muted max-w-full sm:max-w-[30%]">
 											{post.description}
 										</p>
 									{/if}
