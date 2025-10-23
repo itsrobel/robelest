@@ -55,9 +55,8 @@
 		<!-- Blog Posts Section -->
 		<section aria-labelledby="posts-heading">
 			<div class="flex items-center gap-3 text-rose-pine-gold font-mono text-xs mb-8">
-				<span aria-hidden="true">01</span>
+				<span aria-hidden="true">02</span>
 				<div class="w-6 h-px bg-rose-pine-gold" aria-hidden="true"></div>
-				<h2 id="posts-heading" class="sr-only">All Posts</h2>
 				<span aria-hidden="true">JOURNAL</span>
 				<Crown aria-hidden="true" class="w-3 h-3 lg:w-4 lg:h-4 text-rose-pine-gold" />
 			</div>
@@ -78,7 +77,7 @@
 									aria-label="Read {post.title}"
 									class="group block space-y-3 hover:opacity-70 transition-opacity"
 								>
-									<div class="flex items-center gap-2 sm:gap-4 text-rose-pine-muted font-mono text-xs sm:text-sm flex-wrap">
+									<div class="flex items-center gap-2 sm:gap-4 text-rose-pine-iris font-mono text-xs sm:text-sm flex-wrap">
 										<time datetime={post.publishDate}>{formatDate(post.publishDate)}</time>
 										<span aria-hidden="true">•</span>
 										<span class="font-medium">{post.title}</span>
